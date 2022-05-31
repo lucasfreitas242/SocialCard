@@ -1,0 +1,8 @@
+@use 'variables.scss';
+
+body {
+    background-color: variables.$webfatorial-gray-5;
+    font-family: Nunito, sans-serif;
+    min-height: 100vh;
+    display: flex;
+  }

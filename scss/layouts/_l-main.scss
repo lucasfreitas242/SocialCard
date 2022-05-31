@@ -1,0 +1,14 @@
+$layout-name: "l-main";
+
+.#{$layout-name} {
+    background-color: $webfatorial-white;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15), 0 0 30px rgba(0, 0, 0, .1);
+    display: flex;
+    height: 432px;
+    position: relative;
+    padding: 60px;
+    width: 768px;
+    margin: auto;
+
+}
