@@ -36,4 +36,64 @@ body {
   transition: all 90ms ease-out;
 }
 
+.c-card {
+  border-radius: 6px;
+  color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  height: 100%;
+  width: 100%;
+  padding: 30px 36px;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.c-card--instagram {
+  background-color: #e4405f;
+}
+.c-card--instagram .c-button {
+  background-color: #4f5bd5;
+}
+.c-card--instagram .c-button:hover {
+  background-color: #646eda;
+}
+.c-card--twitter {
+  background-color: #00aced;
+}
+.c-card--twitter .c-button {
+  background-color: #fcfcfc;
+  color: #363636;
+}
+.c-card--twitter .c-button:hover {
+  background-color: #e3e3e3;
+}
+.c-card--linkedin {
+  background-color: #0077b5;
+}
+.c-card--linkedin .c-button {
+  background-color: #fcfcfc;
+  color: #363636;
+}
+.c-card--linkedin .c-button:hover {
+  background-color: #d6d6d6;
+}
+.c-card__title {
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+}
+.c-card__title-emphasis {
+  display: inline-block;
+  flex: 1;
+  font-size: 210%;
+  font-weight: bold;
+  width: 100%;
+}
+.c-card__text {
+  line-height: 1.6;
+  margin: 30px 0;
+}
+
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
