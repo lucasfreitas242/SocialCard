@@ -142,6 +142,9 @@ body {
   height: 30px;
   width: 52px;
 }
+.c-menu__toggle > * {
+  pointer-events: none;
+}
 .c-menu__toggle:active {
   transform: translateY(1.5px);
 }

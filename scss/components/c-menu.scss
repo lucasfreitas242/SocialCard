@@ -32,6 +32,10 @@ $component-name: "c-menu";
         height: 30px;
         width: 52px;
 
+        > * {
+            pointer-events: none;
+        }
+
         &:active {
             transform: translateY(1.5px);
         }
