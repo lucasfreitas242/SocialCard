@@ -32,6 +32,10 @@ $component-name: "c-menu";
         height: 30px;
         width: 52px;
 
+        &:active {
+            transform: translateY(1.5px);
+        }
+
         &.is-active {
             fill: $webfatorial-white;
             pointer-events: none;

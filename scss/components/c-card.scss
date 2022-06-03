@@ -13,9 +13,27 @@ $component-name: "c-card";
     position: absolute;
     left: 0;
     top: 0;
+    transition: all $transition-duration-complex ease-in;
+
+    &.is-active {
+        clip-path: circle(100%);
+        transition-delay: 0s;
+        z-index: z-index(default);
+    }
+
+    &:not(.is-active) {
+        transition-delay: $transition-duration-exit;
+    }
+
+    &--index {
+        background-color: $webfatorial-white;
+        color: $text-color;
+    }
 
     &--instagram {
         background-color: $instagram-color;
+        clip-path: circle(0% at 718px 93%);
+
 
         .c-button {
             background-color: #4f5bd5;
@@ -28,6 +46,7 @@ $component-name: "c-card";
 
     &--twitter {
         background-color: $twitter-color;
+        clip-path: circle(0% at 852px 93%);
 
         .c-button {
             background-color: $webfatorial-white;
@@ -41,6 +60,8 @@ $component-name: "c-card";
 
     &--linkedin {
         background-color: $linkedin-color;
+        clip-path: circle(0% at 784px 93%);
+
 
         .c-button {
             background-color: $webfatorial-white;

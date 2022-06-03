@@ -49,9 +49,23 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  transition: all 385ms ease-in;
+}
+.c-card.is-active {
+  clip-path: circle(100%);
+  transition-delay: 0s;
+  z-index: z-index(default);
+}
+.c-card:not(.is-active) {
+  transition-delay: 205ms;
+}
+.c-card--index {
+  background-color: #fcfcfc;
+  color: #363636;
 }
 .c-card--instagram {
   background-color: #e4405f;
+  clip-path: circle(0% at 718px 93%);
 }
 .c-card--instagram .c-button {
   background-color: #4f5bd5;
@@ -61,6 +75,7 @@ body {
 }
 .c-card--twitter {
   background-color: #00aced;
+  clip-path: circle(0% at 852px 93%);
 }
 .c-card--twitter .c-button {
   background-color: #fcfcfc;
@@ -71,6 +86,7 @@ body {
 }
 .c-card--linkedin {
   background-color: #0077b5;
+  clip-path: circle(0% at 784px 93%);
 }
 .c-card--linkedin .c-button {
   background-color: #fcfcfc;
@@ -125,6 +141,9 @@ body {
   padding: 0;
   height: 30px;
   width: 52px;
+}
+.c-menu__toggle:active {
+  transform: translateY(1.5px);
 }
 .c-menu__toggle.is-active {
   fill: #fcfcfc;
