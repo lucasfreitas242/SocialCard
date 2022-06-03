@@ -151,7 +151,6 @@ body {
 .c-menu__toggle.is-active {
   fill: #fcfcfc;
   pointer-events: none;
-  height: 70px;
 }
 .c-menu__toggle svg {
   width: 21px;
