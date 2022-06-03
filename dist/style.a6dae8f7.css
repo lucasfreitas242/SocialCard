@@ -19,7 +19,7 @@ body {
 
 .c-button {
   background-color: #2c809c;
-  border-radius: 30px;
+  border-radius: 10px;
   color: #fcfcfc;
   display: inline-block;
   max-width: 210px;
@@ -44,7 +44,7 @@ body {
   flex: 0.6;
   height: 100%;
   width: 100%;
-  padding: 30px 36px;
+  padding: 10px 15px;
   justify-content: center;
   position: absolute;
   left: 0;
@@ -93,7 +93,46 @@ body {
 }
 .c-card__text {
   line-height: 1.6;
-  margin: 30px 0;
+  margin: 10px 0;
+}
+
+.c-menu {
+  align-items: flex-end;
+  bottom: 0;
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+}
+.c-menu__item {
+  margin-left: 15px;
+  z-index: z-index(dropdown);
+}
+.c-menu__item--index {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.c-menu__toggle {
+  background: transparent;
+  border: 0;
+  bottom: 10px;
+  cursor: pointer;
+  right: 10px;
+  padding: 0;
+  height: 30px;
+  width: 52px;
+}
+.c-menu__toggle.is-active {
+  fill: #fcfcfc;
+  pointer-events: none;
+  height: 70px;
+}
+.c-menu__toggle svg {
+  width: 21px;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */

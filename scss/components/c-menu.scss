@@ -1,0 +1,45 @@
+$component-name: "c-menu";
+
+.#{$component-name} {
+    align-items: flex-end;
+    bottom: 0;
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 $global-module-size;
+    position: absolute;
+    right: 0;
+
+    &__item {
+        margin-left: 15px;
+        z-index: z-index(dropdown);
+
+        &--index {
+            position: absolute;
+            right: $global-module-size;
+            top: $global-module-size;
+        }
+    }
+
+    &__toggle {
+        background: transparent;
+        border: 0;
+        bottom: $global-module-size;
+        cursor: pointer;
+        right: $global-module-size;
+        padding: 0;
+        height: 30px;
+        width: 52px;
+
+        &.is-active {
+            fill: $webfatorial-white;
+            pointer-events: none;
+            height: 70px;
+        }
+
+        svg {
+            width: 21px;
+        }
+    }
+}
